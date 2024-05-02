@@ -1,0 +1,258 @@
+/* Resetting default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Semi-transparent overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Label styles 
+label {
+    display: inline;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    text-align: left;
+    color: #333;
+}
+
+/* Form styles */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            text-align: left;
+            color: #333;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            outline: none;
+            display: inline-block;
+        }
+
+/* Select container style 
+select {
+    width: calc(65% - 20px); /* Adjusted width with margin 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+    display: inline;
+}
+
+/* Container styles */
+.container {
+    background-color: #ffffff;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    margin: 150px auto -120px;
+    width: 800px;
+    font-size: 14px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    text-align: left;
+    height: -10px;
+    width: -10px;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+.logo img {
+    width: 95px;
+    height: 95px;
+    border-radius: 100px;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Content styles */
+.content {
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Form visibility */
+.register-form,
+.need-blood-form,
+.signin-form {
+    display: none;
+    text-align: left;
+}
+
+.show {
+    display: block;
+}
+
+/* Sign-in form */
+.signin-form {
+    position: fixed;
+    top: 80px;
+    right: 5px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+	  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    width: 350px;
+    height: 320px;
+    font-size: 14px;
+}
+
+/* Sign-in form header */
+.signin-form h2 {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: black;
+}
+
+/* Sign-in form labels */
+.signin-form label {
+    display: block;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Sign-in form inputs */
+.signin-form input[type="text"],
+.signin-form input[type="email"],
+.signin-form input[type="password"] {
+    width: calc(100% - 50px);
+    height: 20px;
+    padding: 20px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Sign-in form submit button */
+.signin-form input[type="submit"] {
+    width: 40%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #c11021;
+    margin-top: 10px;
+    margin-left: 80px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Button styles */
+button {
+    background-color: #c11021;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding: 15px 32px;
+    width: 200px;
+    height: 70px;
+    border: none;
+    border-radius: 20px;
+    border: 5px solid #c11021;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out 0.02s, border 0.1s ease-in-out 0.02s, color ease-in-out 0.1s;
+    margin-right: 2%;
+}
+
+/* Form submit button styles */
+.need-blood-form button[type="submit"],
+.register-form button[type="submit"] {
+    width: 40%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #c11021;
+    margin-top: 10px;
+    margin-left: 135px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    transform: scale(1);
+}
+
+/* Login button hover effect */
+.login-button:hover {
+    background-color: #c11021;
+}
